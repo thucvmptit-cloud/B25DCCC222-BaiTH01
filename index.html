@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giới thiệu bản thân</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h2>Thức Minh</h2>
+
+    <button id="menuButton" type="button"
+      aria-label="Mở menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="menu">
+      <a href="#about">Giới thiệu</a>
+      <a href="#skills">Kỹ năng</a>
+      <a href="#projects">Dự án</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <button id="themeButton" type="button">☀/☾</button>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Xin chào, mình là Vũ Minh Thức!</h1>
+      <p>
+        Mình đang là sinh viên Học viện Công nghệ Bưu chính Viễn thông.
+        Mình đang học Lập trình Web
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Kỹ năng</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Dự án mẫu</h2>
+
+      <label for="search">Tìm dự án:</label>
+      <input id="search" type="search" placeholder="Nhập tên dự án">
+
+      <div class="project-list">
+        <article class="project">
+          <h3>Website cá nhân</h3>
+          <p>Giới thiệu bản thân bằng HTML và CSS.</p>
+        </article>
+
+        <article class="project">
+          <h3>Danh sách công việc</h3>
+          <p>Quản lý công việc bằng JavaScript.</p>
+        </article>
+
+        <article class="project">
+          <h3>Quản lý sinh viên</h3>
+          <p>Chương trình quản lý sinh viên bằng Java.</p>
+        </article>
+      </div>
+
+      <p id="searchResult" role="status"></p>
+    </section>
+
+    <section id="contact">
+      <h2>Liên hệ</h2>
+
+      <form id="contactForm" novalidate>
+        <label for="name">Họ tên:</label>
+        <input id="name" type="text" autocomplete="name">
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" autocomplete="email">
+
+        <label for="message">Nội dung:</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <button type="submit">Kiểm tra</button>
+        <p id="result" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> VŨ MINH THỨC
+  </footer>
+</body>
+</html>
